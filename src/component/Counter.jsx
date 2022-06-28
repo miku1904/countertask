@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Error from './error';
 
 const Counter = () => {
     const [count,setCount]= useState(0);
@@ -14,6 +15,7 @@ const Counter = () => {
 
   return (
     <>
+    <Error count={count} error="Counter Less then 25" />
     <div className='counter'>
     <h1>{count}</h1>
     </div>
